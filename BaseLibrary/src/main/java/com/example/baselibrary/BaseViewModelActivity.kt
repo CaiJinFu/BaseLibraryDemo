@@ -36,7 +36,7 @@ abstract class BaseViewModelActivity<VModel : BaseViewModel> : BaseActivity() {
                 this.javaClass.genericSuperclass as ParameterizedType?
             val clazz =
                 pt!!.actualTypeArguments[0] as Class<VModel>
-            mViewModel = ViewModelProviders.of(this)[clazz]
+            mViewModel = ViewModelProviders.of(this).get(clazz)
         } catch (e: Exception) {
             MLog.e(TAG, e)
         }
