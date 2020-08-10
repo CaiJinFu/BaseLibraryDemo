@@ -5,7 +5,7 @@
 Kotlin在国外已经非常流行了，好处不必多说了，如果不学习的话，那就只能落后了，那么迎娶白富美的机会可就少了许多。MVVM+LiveData也是目前比较流行的APP架构模式了，有必要学习一波。所以本着学习的态度，写了一个BaseModule，方便写新项目时可以直接依赖使用。废话不多说，开码。
 
 ## 思路
-首先我的思路是这样的，有的Activity可能不需要ViewDataBinding，也有可能不需要ViewModel，也有可能都不需要，所以我的BaseActivity中，只加入了最基本的代码。然而有需要ViewDataBinding，那么大多数情况下都是需要ViewModel的，所以就有了BaseViewDataActivity，再者就是只有ViewModel的BaseViewModelActivity，这两个Activity都是继承于BaseActivity。如果有需要改的，可根据自己的需求自行修改。
+首先我的思路是这样的，有的Activity可能不需要ViewDataBinding，也有可能不需要ViewModel，也有可能都不需要，所以我的BaseActivity中，只加入了最基本的代码。然后有需要ViewDataBinding，那么大多数情况下都是需要ViewModel的，所以就有了BaseViewDataActivity，再者就是只有ViewModel的BaseViewModelActivity，这两个Activity都是继承于BaseActivity。如果有需要改的，可根据自己的需求自行修改。
 
 ### BaseActivity
 
