@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
  * @name BaseLibraryDemo
  * @class name：com.example.basemodule.utils
  * @class describe Toast扩展
- * @anthor jin
+ * @author 猿小蔡
  * @time 2020/8/10 11:58
  * @change
  * @chang time

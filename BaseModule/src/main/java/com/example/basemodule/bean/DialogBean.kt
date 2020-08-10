@@ -3,7 +3,7 @@ package com.example.basemodule.bean
 /**
  * 加载中dialog实体类
  *
- * @author Jin
+ * @author 猿小蔡
  */
 data class DialogBean(
     var isShow: Boolean = false,

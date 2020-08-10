@@ -5,7 +5,7 @@ import android.os.Looper
 
 /**
  * 主线程工具类
- * author：liu by 20200315
+ * @author 猿小蔡
  */
 object MainThreadUtil {
     /**
@@ -30,7 +30,7 @@ object MainThreadUtil {
      * @param delayedMillis 延迟时间
      */
     @JvmStatic
-    fun postDelayed(callback: Runnable?, delayedMillis: Long) {
+    fun postDelayed(callback: Runnable?, delayedMillis: Long = 0) {
         MAIN_HANDLER.postDelayed(callback, delayedMillis)
     }
 }

@@ -4,7 +4,10 @@ import android.text.TextUtils
 import android.util.Log
 import com.example.basemodule.BuildConfig
 
-/** 日志工具类 author:liu by 20200315  */
+/** 日志工具类
+ *
+ * @author 猿小蔡
+ */
 object MLog {
 
     @JvmStatic

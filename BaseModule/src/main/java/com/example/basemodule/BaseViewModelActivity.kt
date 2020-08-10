@@ -11,7 +11,7 @@ import java.lang.reflect.ParameterizedType
  * @name Android BaseModule
  * @class name：com.example.basemodule
  * @class describe 带有ViewModel的BaseActivity
- * @anther jin
+ * @author 猿小蔡
  * @time 2020/8/10
  * @change
  * @chang time

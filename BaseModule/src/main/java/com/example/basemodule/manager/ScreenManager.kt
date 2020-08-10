@@ -6,7 +6,7 @@ import android.content.res.Configuration
 
 /**
  * 适配设备屏幕尺寸
- * author：liu by 20200315
+ * @author 猿小蔡
  */
 object ScreenManager {
 

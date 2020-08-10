@@ -11,7 +11,7 @@ import io.reactivex.disposables.Disposable
 /**
  * ViewModel基类，管理rxJava发出的请求，ViewModel销毁同时也取消请求
  *
- * @author Jin
+ * @author 猿小蔡
  */
 abstract class BaseViewModel : ViewModel() {
     /** 管理RxJava请求  */

@@ -13,7 +13,7 @@ import com.example.basemodule.R
 /**
  * 加载中的dialog
  *
- * @author Jin
+ * @author 猿小蔡
  */
 object DialogLoadingUtils {
     /**

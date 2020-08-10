@@ -6,7 +6,7 @@ import com.example.basemodule.bean.DialogBean
 /**
  * 用来显示加载中dialog的MutableLiveData
  *
- * @author Jin
+ * @author 猿小蔡
  */
 class DialogLiveData<T> : MutableLiveData<T>() {
     private val mDialogBean = DialogBean()

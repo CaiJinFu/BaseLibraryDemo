@@ -5,7 +5,7 @@ import java.util.concurrent.CopyOnWriteArrayList
 
 /**
  * Activity栈管理类，当Activity被创建是压栈，销毁时出栈
- * author：liu by 20200315
+ * @author 猿小蔡
  */
 class ActivityTaskManager private constructor() {
 
