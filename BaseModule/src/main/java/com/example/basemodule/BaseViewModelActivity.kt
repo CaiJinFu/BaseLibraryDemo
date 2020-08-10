@@ -29,7 +29,7 @@ abstract class BaseViewModelActivity<VModel : BaseViewModel> : BaseActivity() {
 
     protected abstract fun initData()
 
-    fun initViewModel(): VModel {
+    private fun initViewModel(): VModel {
         try {
             // 通过反射获取model的真实类型
             val pt =
