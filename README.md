@@ -258,3 +258,5 @@ ViewDataBinding需要通过DataBindingUtil.setContentView(this, layoutId)创建�
 [TODO-MVVM：使用JetPack中的AndroidX + ViewModel + LiveData + DataBinding组件，同时使用ViewPager2 + RxJava2 + Retrofit2 + Glide等主流框架进行搭建](https://github.com/azhon/TODO-MVVM)
 
 [Android-Tools-boluomi：Android常用工具](https://github.com/geekDavid/Android-Tools-boluomi)
+
+[使用LiveData和ViewModel为Android项目搭建MVVM架构（Kotlin语言版）（入门教程）](https://blog.csdn.net/weixin_44407870/article/details/85864927)
