@@ -1,7 +1,7 @@
 package com.example.baselibrarydemo
 
 import android.app.Application
-import com.example.basemodule.utils.ToastUtil
+import com.example.baselibrary.utils.ToastUtil
 
 /**
  * @name BaseLibraryDemo

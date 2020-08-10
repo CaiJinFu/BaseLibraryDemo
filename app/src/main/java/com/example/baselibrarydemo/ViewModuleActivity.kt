@@ -1,8 +1,8 @@
 package com.example.baselibrarydemo
 
 import androidx.lifecycle.Observer
+import com.example.baselibrary.BaseViewModelActivity
 import com.example.baselibrarydemo.lifecycle.TestViewModule
-import com.example.basemodule.BaseViewModelActivity
 import kotlinx.android.synthetic.main.activity_viewmodel.*
 
 class ViewModuleActivity : BaseViewModelActivity<TestViewModule>() {

@@ -2,7 +2,7 @@ package com.example.baselibrarydemo
 
 import android.content.Intent
 import android.os.Bundle
-import com.example.basemodule.BaseActivity
+import com.example.baselibrary.BaseActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity() {

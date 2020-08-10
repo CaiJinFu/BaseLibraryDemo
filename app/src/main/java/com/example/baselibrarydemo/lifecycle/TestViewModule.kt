@@ -4,7 +4,7 @@ import android.os.Handler
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
-import com.example.basemodule.lifecycle.BaseViewModel
+import com.example.baselibrary.lifecycle.BaseViewModel
 
 /**
  * @name BaseLibraryDemo

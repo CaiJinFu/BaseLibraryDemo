@@ -1,19 +1,19 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
-apply plugin: 'kotlin-kapt'
+
 android {
-    compileSdkVersion rootProject.ext.android.compileSdkVersion
-    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    compileSdkVersion 30
+    buildToolsVersion "30.0.0"
 
     defaultConfig {
-        applicationId "com.example.baselibrarydemo"
-        minSdkVersion rootProject.ext.android.minSdkVersion
-        targetSdkVersion rootProject.ext.android.targetSdkVersion
-        versionCode rootProject.ext.android.versionCode
-        versionName rootProject.ext.android.versionName
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -34,9 +34,11 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation "androidx.core:core-ktx:$rootProject.ext.dependVersion.core_ktx"
     implementation "androidx.appcompat:appcompat:$rootProject.ext.dependVersion.appcompat"
-    implementation "androidx.constraintlayout:constraintlayout:$rootProject.ext.dependVersion.constraintlayout"
-    implementation project(path: ':BaseLibrary')
     testImplementation "junit:junit:$rootProject.ext.dependVersion.junit"
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    api 'android.arch.lifecycle:extensions:1.1.1'
+    api "io.reactivex.rxjava2:rxjava:$rootProject.ext.dependVersion.rxjava"
+    api "io.reactivex.rxjava2:rxandroid:$rootProject.ext.dependVersion.rxandroid"
+
 }

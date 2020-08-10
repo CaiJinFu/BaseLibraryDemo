@@ -1,9 +1,9 @@
 package com.example.baselibrarydemo
 
 import androidx.lifecycle.Observer
+import com.example.baselibrary.BaseViewDataActivity
 import com.example.baselibrarydemo.databinding.ActivityViewdataBinding
 import com.example.baselibrarydemo.lifecycle.TestViewDataViewModel
-import com.example.basemodule.BaseViewDataActivity
 
 class ViewDataDemoActivity :
     BaseViewDataActivity<ActivityViewdataBinding, TestViewDataViewModel>() {
