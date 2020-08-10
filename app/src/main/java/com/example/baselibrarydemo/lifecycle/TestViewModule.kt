@@ -29,7 +29,7 @@ class TestViewModule : BaseViewModel() {
         data.value = Repository.getWXArticle(context)
         mShowDialog.setValue(false)
     }, {
-        mError.postValue(it)
+        mError.postValue("请求失败了")
         mShowDialog.setValue(false)
     })
 

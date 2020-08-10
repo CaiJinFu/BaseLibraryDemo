@@ -2,6 +2,7 @@ package com.example.baselibrarydemo
 
 import androidx.lifecycle.Observer
 import com.example.baselibrary.BaseViewModelActivity
+import com.example.baselibrary.utils.MLog
 import com.example.baselibrarydemo.lifecycle.TestViewModule
 import com.example.mvvm.bean.ArticleData
 import kotlinx.android.synthetic.main.activity_viewmodel.*
@@ -19,7 +20,8 @@ class ViewModuleActivity : BaseViewModelActivity<TestViewModule>() {
     }
 
     override fun showError(obj: Any?) {
-
+        val errorMsg = obj as String
+        MLog.i(logs = *arrayOf(errorMsg))
     }
 
     /**

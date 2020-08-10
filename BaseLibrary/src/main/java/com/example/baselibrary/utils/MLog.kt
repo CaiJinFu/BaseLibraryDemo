@@ -10,47 +10,49 @@ import com.example.baselibrary.BuildConfig
  */
 object MLog {
 
+    const val TAG: String = "TAG"
+
     @JvmStatic
-    fun v(tag: String, vararg logs: String?) {
+    fun v(tag: String = TAG, vararg logs: String) {
         print(tag, LogType.VERBOSE, *logs)
     }
 
     @JvmStatic
-    fun i(tag: String, vararg logs: String?) {
+    fun i(tag: String = TAG, vararg logs: String) {
         print(tag, LogType.INFO, *logs)
     }
 
     @JvmStatic
-    fun d(tag: String, vararg logs: String?) {
+    fun d(tag: String = TAG, vararg logs: String) {
         if (BuildConfig.DEBUG) {
             print(tag, LogType.DEBUG, *logs)
         }
     }
 
     @JvmStatic
-    fun w(tag: String, vararg logs: String?) {
+    fun w(tag: String = TAG, vararg logs: String) {
         print(tag, LogType.WARNING, *logs)
     }
 
     @JvmStatic
-    fun e(tag: String, throwable: Throwable?) {
+    fun e(tag: String = TAG, throwable: Throwable) {
         e(tag, throwable)
     }
 
     @JvmStatic
-    fun e(tag: String, log: String?, throwable: Throwable?) {
+    fun e(tag: String = TAG, log: String?, throwable: Throwable?) {
         e(tag, log, throwable)
     }
 
     @JvmStatic
-    fun e(tag: String, vararg logs: String?) {
+    fun e(tag: String = TAG, vararg logs: String) {
         print(tag, LogType.ERROR, *logs)
     }
 
     private fun print(
         tag: String,
         logType: LogType,
-        vararg logs: String?
+        vararg logs: String
     ) {
         if (logs.isEmpty() || TextUtils.isEmpty(tag)) {
             return

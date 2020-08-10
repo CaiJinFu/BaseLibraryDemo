@@ -41,7 +41,7 @@ abstract class BaseViewDataActivity<DBinding : ViewDataBinding, VModel : BaseVie
                 pt!!.actualTypeArguments[1] as Class<VModel>
             mViewModel = ViewModelProviders.of(this)[clazz]
         } catch (e: Exception) {
-            MLog.i(TAG, e.message)
+            MLog.e(TAG, e.message, e)
         }
         return mViewModel
     }
