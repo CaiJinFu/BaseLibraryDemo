@@ -1,7 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
-apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
     buildToolsVersion rootProject.ext.android.buildToolsVersion
@@ -39,4 +38,13 @@ dependencies {
     testImplementation "junit:junit:$rootProject.ext.dependVersion.junit"
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //  =============第三方库========================
+    //Retrofit网络请求
+    implementation "com.squareup.retrofit2:retrofit:${rootProject.ext.dependVersion.retrofit}"
+    implementation "com.squareup.retrofit2:converter-gson:${rootProject.ext.dependVersion.retrofit}"
+    // OkHttp
+    implementation "com.squareup.okhttp3:okhttp:${rootProject.ext.dependVersion.okhttp}"
+    //Kotlin Coroutines 协程
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:${rootProject.ext.dependVersion.kotlinxCoroutines}"
 }

@@ -1,9 +1,7 @@
 package com.example.baselibrarydemo.lifecycle
 
 import android.os.Handler
-import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.Observer
 import com.example.baselibrary.lifecycle.BaseViewModel
 import com.example.baselibrarydemo.bean.User
 
@@ -22,10 +20,8 @@ class TestViewDataViewModel : BaseViewModel() {
     val showMsg: MutableLiveData<User> = MutableLiveData()
 
     fun showText(
-        text: String, owner: LifecycleOwner,
-        observer: Observer<User>
+        text: String
     ) {
-        showMsg.observe(owner, observer)
         mShowDialog.setValue(true)
         Handler().postDelayed({
             showMsg.postValue(User(text))

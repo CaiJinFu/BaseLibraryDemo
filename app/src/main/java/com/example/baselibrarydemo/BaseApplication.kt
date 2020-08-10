@@ -14,8 +14,15 @@ import com.example.baselibrary.utils.ToastUtil
  */
 
 class BaseApplication : Application() {
+
+    companion object {
+        // app实例
+        lateinit var instance: BaseApplication
+    }
+
     override fun onCreate() {
         super.onCreate()
+        instance = this
         ToastUtil.setApplicationContext(this)
     }
 }

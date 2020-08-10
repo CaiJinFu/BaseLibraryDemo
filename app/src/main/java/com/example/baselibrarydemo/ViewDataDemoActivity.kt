@@ -12,7 +12,8 @@ class ViewDataDemoActivity :
         get() = R.layout.activity_viewdata
 
     override fun initData() {
-        mViewModel.showText("HelloWorld", this, Observer { mDataBinding.user = it })
+        mViewModel.showMsg.observe(this, Observer { mDataBinding.user = it })
+        mViewModel.showText("HelloWorld")
     }
 
     override fun showError(obj: Any?) {

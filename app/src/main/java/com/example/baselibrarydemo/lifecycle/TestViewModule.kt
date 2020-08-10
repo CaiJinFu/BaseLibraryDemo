@@ -1,10 +1,12 @@
 package com.example.baselibrarydemo.lifecycle
 
+import android.content.Context
 import android.os.Handler
-import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.Observer
 import com.example.baselibrary.lifecycle.BaseViewModel
+import com.example.baselibrarydemo.net.Repository
+import com.example.baselibrarydemo.utils.launch
+import com.example.mvvm.bean.ArticleData
 
 /**
  * @name BaseLibraryDemo
@@ -20,11 +22,20 @@ class TestViewModule : BaseViewModel() {
 
     val showMsg: MutableLiveData<String> = MutableLiveData()
 
+    val data = MutableLiveData<ArticleData>()
+
+    fun getData(context: Context?) = launch({
+        mShowDialog.setValue(true)
+        data.value = Repository.getWXArticle(context)
+        mShowDialog.setValue(false)
+    }, {
+        mError.postValue(it)
+        mShowDialog.setValue(false)
+    })
+
     fun showText(
-        text: String, owner: LifecycleOwner,
-        observer: Observer<String>
+        text: String
     ) {
-        showMsg.observe(owner, observer)
         mShowDialog.setValue(true)
         Handler().postDelayed({
             showMsg.postValue(text)
