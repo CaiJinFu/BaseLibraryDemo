@@ -2,8 +2,8 @@ package com.example.baselibrarydemo.net
 
 import android.content.Context
 import com.example.baselibrarydemo.bean.ArticleData
+import com.example.baselibrarydemo.bean.BaseBean
 import com.example.baselibrarydemo.utils.ApiException
-import com.example.mvvm.bean.BaseBean
 
 /**
  * 接口资源

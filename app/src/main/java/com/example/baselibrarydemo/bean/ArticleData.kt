@@ -1,7 +1,5 @@
 package com.example.baselibrarydemo.bean
 
-import com.example.mvvm.bean.BaseBean
-
 
 /**
  * 公众号

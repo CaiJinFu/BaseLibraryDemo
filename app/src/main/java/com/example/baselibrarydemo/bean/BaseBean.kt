@@ -1,4 +1,4 @@
-package com.example.mvvm.bean
+package com.example.baselibrarydemo.bean
 
 /**
  * Json对象基类
