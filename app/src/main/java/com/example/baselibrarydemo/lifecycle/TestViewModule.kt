@@ -4,9 +4,9 @@ import android.content.Context
 import android.os.Handler
 import androidx.lifecycle.MutableLiveData
 import com.example.baselibrary.lifecycle.BaseViewModel
+import com.example.baselibrarydemo.bean.ArticleData
 import com.example.baselibrarydemo.net.Repository
 import com.example.baselibrarydemo.utils.launch
-import com.example.mvvm.bean.ArticleData
 
 /**
  * @name BaseLibraryDemo

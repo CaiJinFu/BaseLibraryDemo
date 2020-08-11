@@ -1,6 +1,6 @@
 package com.example.baselibrarydemo.net
 
-import com.example.mvvm.bean.ArticleData
+import com.example.baselibrarydemo.bean.ArticleData
 import com.example.mvvm.bean.BaseBean
 import retrofit2.http.FieldMap
 import retrofit2.http.GET
