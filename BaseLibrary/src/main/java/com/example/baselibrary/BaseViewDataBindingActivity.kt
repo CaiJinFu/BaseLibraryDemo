@@ -18,7 +18,7 @@ import java.lang.reflect.ParameterizedType
  * @change
  * @chang time
  */
-abstract class BaseViewDataActivity<DBinding : ViewDataBinding, VModel : BaseViewModel> :
+abstract class BaseViewDataBindingActivity<DBinding : ViewDataBinding, VModel : BaseViewModel> :
     BaseActivity() {
 
     protected lateinit var mDataBinding: DBinding
