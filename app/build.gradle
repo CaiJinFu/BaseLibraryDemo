@@ -26,6 +26,11 @@ android {
         // for view binding :
         // viewBinding = true
     }
+    compileOptions {
+        // Sets Java compatibility to Java 8
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -34,11 +39,11 @@ dependencies {
     implementation "androidx.core:core-ktx:$rootProject.ext.dependVersion.core_ktx"
     implementation "androidx.appcompat:appcompat:$rootProject.ext.dependVersion.appcompat"
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.ext.dependVersion.constraintlayout"
-    implementation project(path: ':BaseLibrary')
     testImplementation "junit:junit:$rootProject.ext.dependVersion.junit"
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-
+    //    implementation project(path: ':BaseLibrary')
+    implementation "com.example.baselibrary:JackfruitBaseLibrary:1.0.4"
     //  =============第三方库========================
     //Retrofit网络请求
     implementation "com.squareup.retrofit2:retrofit:${rootProject.ext.dependVersion.retrofit}"
@@ -47,4 +52,5 @@ dependencies {
     implementation "com.squareup.okhttp3:okhttp:${rootProject.ext.dependVersion.okhttp}"
     //Kotlin Coroutines 协程
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:${rootProject.ext.dependVersion.kotlinxCoroutines}"
+
 }

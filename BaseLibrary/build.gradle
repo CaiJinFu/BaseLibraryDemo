@@ -27,6 +27,18 @@ android {
         // for view binding :
         // viewBinding = true
     }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+        ignoreWarnings true
+    }
+    compileOptions {
+        // Sets Java compatibility to Java 8
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -44,3 +56,6 @@ dependencies {
     api "androidx.lifecycle:lifecycle-viewmodel-ktx:${rootProject.ext.dependVersion.lifecycle}"
     api "androidx.lifecycle:lifecycle-extensions:${rootProject.ext.dependVersion.lifecycle}"
 }
+
+
+apply from: './jcenter-push.gradle'
