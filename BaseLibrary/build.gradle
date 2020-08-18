@@ -38,8 +38,8 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     api 'android.arch.lifecycle:extensions:1.1.1'
-    api "io.reactivex.rxjava2:rxjava:$rootProject.ext.dependVersion.rxjava"
-    api "io.reactivex.rxjava2:rxandroid:$rootProject.ext.dependVersion.rxandroid"
+//    api "io.reactivex.rxjava2:rxjava:$rootProject.ext.dependVersion.rxjava"
+//    api "io.reactivex.rxjava2:rxandroid:$rootProject.ext.dependVersion.rxandroid"
     api "androidx.lifecycle:lifecycle-livedata:${rootProject.ext.dependVersion.lifecycle}"
     api "androidx.lifecycle:lifecycle-viewmodel-ktx:${rootProject.ext.dependVersion.lifecycle}"
     api "androidx.lifecycle:lifecycle-extensions:${rootProject.ext.dependVersion.lifecycle}"
