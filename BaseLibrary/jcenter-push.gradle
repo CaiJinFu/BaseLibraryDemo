@@ -89,7 +89,7 @@ bintray {
     configurations = ['archives']
 
     pkg {
-        repo = 'Jackfruit'
+        repo = properties.getProperty('BINTRAY_USER')
         name = PROJ_NAME
         licenses = ['Apache-2.0']
         userOrg ='jackfruit666'
