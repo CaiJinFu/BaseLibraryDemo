@@ -3,7 +3,7 @@ apply from: "config.gradle"
 buildscript {
     ext.kotlin_version = "1.4.0"
     repositories {
-        google()
+        google() { url 'https://maven.aliyun.com/repository/google' }
         jcenter() { url'https://maven.aliyun.com/repository/jcenter' }
     }
     dependencies {
@@ -19,7 +19,7 @@ buildscript {
 
 allprojects {
     repositories {
-        google()
+        google() { url 'https://maven.aliyun.com/repository/google' }
         jcenter() { url'https://maven.aliyun.com/repository/jcenter' }
     }
     tasks.withType(Javadoc) {
