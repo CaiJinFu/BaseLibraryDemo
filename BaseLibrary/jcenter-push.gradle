@@ -89,10 +89,10 @@ bintray {
     configurations = ['archives']
 
     pkg {
-        repo = properties.getProperty('BINTRAY_USER')
+        repo = PROJ_NAME
         name = PROJ_NAME
         licenses = ['Apache-2.0']
-        userOrg ='jackfruit666'
+        userOrg ='cainiao'
         vcsUrl = PROJ_VCSURL
         websiteUrl = PROJ_WEBSITEURL
         publish = true

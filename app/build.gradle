@@ -43,7 +43,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     //    implementation project(path: ':BaseLibrary')
-    implementation "com.example.baselibrary:JackfruitBaseLibrary:1.0.4"
+    implementation "com.cainiao.baselibrary:baselibrary:0.0.1"
     //  =============第三方库========================
     //Retrofit网络请求
     implementation "com.squareup.retrofit2:retrofit:${rootProject.ext.dependVersion.retrofit}"
