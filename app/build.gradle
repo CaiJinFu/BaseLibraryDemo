@@ -40,8 +40,8 @@ dependencies {
     implementation "androidx.appcompat:appcompat:$rootProject.ext.dependVersion.appcompat"
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.ext.dependVersion.constraintlayout"
     testImplementation "junit:junit:$rootProject.ext.dependVersion.junit"
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     //    implementation project(path: ':BaseLibrary')
     implementation "com.cainiao.baselibrary:baselibrary:0.0.1"
     //  =============第三方库========================
